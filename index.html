@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tour De France</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/dropdown.css" />
+  </head>
+
+  <body>
+    <nav style="display: flex; flex-wrap: nowrap; align-items: center;">
+      <!-- nav bar -->
+      <div style="display:flex; flex-wrap: wrap; align-items: center; gap: 1rem;">
+        <a href="./pages/presentation.html" target="frame">
+          <!-- logo -->
+          <img src="./images/logo.png" width="96" height="64" />
+        </a>
+
+        <div class="dropdown" tabindex="0">
+          <div class="toggle">
+            annees
+            <span>▾</span>
+          </div>
+
+          <div class="menu">
+            <a href="/pages/2025/index.html" target="navframe">2025</a>
+            <a href="/pages/2024/index.html" target="navframe">2024</a>
+            <a href="/pages/2023/index.html" target="navframe">2023</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <iframe
+          src="./pages/2025/index.html"
+          name="navframe"
+          frameborder="0"
+          style="width: 70dvw; height: 30px;"
+        ></iframe>
+      </div>
+    </nav>
+    <span class="separator-vt"></span>
+    <iframe
+      src="./pages/presentation.html"
+      name="frame"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
