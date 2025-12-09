@@ -1,10 +1,234 @@
+<head>
+  <style>
+    body {
+      margin: 0px;
+      font-size: larger
+    }
+
+    .article {
+      padding: 0px 10px;
+      padding-bottom: 5rem;
+    }
+
+    .article h2 {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 700;
+      width: fit-content;
+      box-shadow: 10px 5px rgb(255, 255, 0);
+      border-radius: 5px;
+    }
+
+    .article .bold {
+      font-weight: 900;
+    }
+
+    @keyframes animate-gradient {
+      from {
+        background-position: 0% 50%;
+      }
+      to {
+        background-position: 200% 50%;
+      }
+    }
+
+    .gradient {
+      animation: animate-gradient 30s ease-in-out infinite;
+      background: linear-gradient(90deg, #ffff0046, #00ff0046, #00ffff46, #ffff0046);
+      background-size: 200% 100%;
+    }
+  </style>
+</head>
+
 <body>
   <!-- presentation image -->
-  <img />
+  <div style="display: flex; justify-content: center; overflow: auto">
+    <img src="/public/parcours.png" usemap="#image-map" />
 
-  <!-- intro/presentation texte -->
-    <h1>Intro</h1>
-  <p>
+    <map name="image-map">
+      <area href="/pages/etapes.html#d1" target="frame" alt="d1" title="d1" coords="646,1164,604,1140" shape="rect" />
+      <area href="/pages/etapes.html#a1" target="frame" alt="a1" title="a1" coords="579,1148,605,1167" shape="rect" />
+      <area href="/pages/etapes.html#d2" target="frame" alt="d2" title="d2" coords="506,1186,535,1203" shape="rect" />
+      <area href="/pages/etapes.html#a2" target="frame" alt="a2" title="a2" coords="576,1187,605,1167" shape="rect" />
+      <area href="/pages/etapes.html#d3" target="frame" alt="d3" title="d3" coords="616,1118,647,1137" shape="rect" />
+      <area href="/pages/etapes.html#a3" target="frame" alt="a3" title="a3" coords="580,1022,615,1041" shape="rect" />
+      <area href="/pages/etapes.html#d4" target="frame" alt="d4" title="d4" coords="601,953,637,977" shape="rect" />
+      <area href="/pages/etapes.html#a4" target="frame" alt="a4" title="a4" coords="541,976,582,999" shape="rect" />
+      <area href="/pages/etapes.html#d5" target="frame" alt="d5" title="d5" coords="490,982,456,964" shape="rect" />
+      <area href="/pages/etapes.html#a5" target="frame" alt="a5" title="a5" coords="408,951,387,985" shape="rect" />
+      <area href="/pages/etapes.html#d6" target="frame" alt="d6" title="d6" coords="407,952,429,985" shape="rect" />
+      <area href="/pages/etapes.html#a6" target="frame" alt="a6" title="a6" coords="413,1000,449,1026" shape="rect" />
+      <area href="/pages/etapes.html#d7" target="frame" alt="d7" title="d7" coords="376,902,412,932" shape="rect" />
+      <area href="/pages/etapes.html#a7" target="frame" alt="a7" title="a7" coords="371,772,409,803" shape="rect" />
+      <area href="/pages/etapes.html#d8" target="frame" alt="d8" title="d8" coords="466,746,504,767" shape="rect" />
+      <area href="/pages/etapes.html#a8" target="frame" alt="a8" title="a8" coords="455,787,487,809" shape="rect" />
+      <area href="/pages/etapes.html#d9" target="frame" alt="d9" title="d9" coords="542,740,571,762" shape="rect" />
+      <area href="/pages/etapes.html#a9" target="frame" alt="a9" title="a9" coords="599,703,641,726" shape="rect" />
+      <area href="/pages/etapes.html#d10" target="frame" alt="d10" title="d10" coords="603,774,635,803" shape="rect" />
+      <area href="/pages/etapes.html#a10" target="frame" alt="a10" title="a10" coords="670,743,636,784" shape="rect" />
+      <area href="/pages/etapes.html#d11" target="frame" alt="d11" title="d11" coords="674,638,727,664" shape="rect" />
+      <area href="/pages/etapes.html#a11" target="frame" alt="a11" title="a11" coords="654,533,699,557" shape="rect" />
+      <area href="/pages/etapes.html#d12" target="frame" alt="d12" title="d12" coords="698,557,657,580" shape="rect" />
+      <area href="/pages/etapes.html#a12" target="frame" alt="a12" title="a12" coords="795,555,830,584" shape="rect" />
+      <area href="/pages/etapes.html#d13" target="frame" alt="d13" title="d13" coords="842,526,874,550" shape="rect" />
+      <area href="/pages/etapes.html#a13" target="frame" alt="a13" title="a13" coords="955,463,989,491" shape="rect" />
+      <area href="/pages/etapes.html#d14" target="frame" alt="d14" title="d14" coords="993,450,1027,476" shape="rect" />
+      <area href="/pages/etapes.html#a14" target="frame" alt="a14" title="a14" coords="966,411,1011,438" shape="rect" />
+      <area href="/pages/etapes.html#d15" target="frame" alt="d15" title="d15" coords="880,564,916,588" shape="rect" />
+      <area href="/pages/etapes.html#a15" target="frame" alt="a15" title="a15" coords="955,674,924,653" shape="rect" />
+      <area href="/pages/etapes.html#d16" target="frame" alt="d16" title="d16" coords="946,608,974,632" shape="rect" />
+      <area href="/pages/etapes.html#a16" target="frame" alt="a16" title="a16" coords="915,603,944,635" shape="rect" />
+      <area href="/pages/etapes.html#d17" target="frame" alt="d17" title="d17" coords="878,685,916,714" shape="rect" />
+      <area href="/pages/etapes.html#a17" target="frame" alt="a17" title="a17" coords="862,720,843,758" shape="rect" />
+      <area href="/pages/etapes.html#d18" target="frame" alt="d18" title="d18" coords="862,722,881,759" shape="rect" />
+      <area href="/pages/etapes.html#a18" target="frame" alt="a18" title="a18" coords="921,795,957,822" shape="rect" />
+      <area href="/pages/etapes.html#d19" target="frame" alt="d19" title="d19" coords="883,814,925,844" shape="rect" />
+      <area href="/pages/etapes.html#a19" target="frame" alt="a19" title="a19" coords="910,736,886,767" shape="rect" />
+      <area href="/pages/etapes.html#d20" target="frame" alt="d20" title="d20" coords="938,767,899,793" shape="rect" />
+      <area href="/pages/etapes.html#a20" target="frame" alt="a20" title="a20" coords="910,738,930,766" shape="rect" />
+      <area href="/pages/etapes.html#d21" target="frame" alt="d21" title="d21" coords="538,321,587,357" shape="rect" />
+      <area href="/pages/etapes.html#a21" target="frame" alt="a21" title="a21" coords="606,301,655,346" shape="rect" />
+    </map>
+  </div>
 
-  </p>
+  <section class="article gradient">
+    <button style="position: absolute; right: 0;"
+      onclick="document.getElementsByClassName('gradient')[0].classList.remove('gradient')">
+      disable gradient
+    </button>
+    <hr />
+
+    <h2><em>PARCOURS&nbsp;</em></h2>
+    <div>
+      <ul>
+        <li>Grand Départ à Barcelone puis retour dans l'Hexagone jusqu'à l'arrivée finale à Paris.</li>
+        <li>Ce sera le 27e Grand Départ de l'étranger et le 3e depuis l'Espagne.</li>
+        <li>Dans l'Hexagone, 7 régions et 29 départements seront visités</li>
+      </ul>
+    </div>
+
+    <h2>Étapes&nbsp;</h2>
+    <div>
+      <div>
+        <p>
+          seront au nombre de 21 :
+          <strong>7 de plaine</strong>
+          ,&nbsp;
+          <strong>4 accidentées</strong>
+          ,&nbsp;
+          <strong>8 de montagne avec 5 arrivées en altitude</strong>
+          à Gavarnie-Gèdre, au Plateau de Solaison, à Orcières- Merlette et à l'Alpe d'Huez (2 fois),
+          <strong>1 contre la montre par équipe</strong>
+          et
+          <strong>1 contre la montre en individuel.</strong>
+          &nbsp;Il y aura 2 journées de repos.
+          <br />
+        </p>
+      </div>
+    </div>
+
+    <h2 class="bold">Bienvenue à...&nbsp;</h2>
+    <div>
+      <p>
+        Sur un total de 37,
+        <strong>10 sites ou villes-étapes inédits</strong>
+        feront en 2026 leur apparition sur la carte du Tour.
+      </p>
+      <ul>
+        <li>Tarragone (départ de la 2e étape)</li>
+        <li>Granollers (départ de la 3e étape)</li>
+        <li>Les Angles (arrivée de la 3e étape)</li>
+        <li>Gavarnie-Gèdre (arrivée de la 6e étape)</li>
+        <li>Hagetmau (départ de la 7e étape)</li>
+        <li>Malemort (départ de la 9e étape)</li>
+        <li>Ussel (arrivée de la 9e étape)</li>
+        <li>Circuit Nevers Magny-Cours(départ de la 12e étape)</li>
+        <li>Plateau de Solaison (arrivée de la 15e étape)</li>
+        <li>Thoiry (départ de la 21e étape)</li>
+      </ul>
+
+    </div>
+
+    <h2>
+      Montagne&nbsp;
+    </h2>
+    <div>
+      <ul>
+        <li>
+          Dans l'ordre,
+          <strong>Pyrénées</strong>
+          puis
+          <strong>Massif central</strong>
+          ,
+          <strong>Vosges, Jura</strong>
+          et
+          <strong>Alpes</strong>
+          figureront au programme de cette 113e édition.
+        </li>
+        <li>
+          De nouvelles ascensions viendront s'inscrire dans l'histoire du Tour : côte de Begues (2e étape),
+          <strong>montée de Gavarnie-Gèdre</strong>
+          (6e étape),
+          <strong>col de la Griffoul</strong>
+          (10e étape),
+          <strong>col du Page</strong>
+          et
+          <strong>col du Haag</strong>
+          (14e étape),
+          <strong>Plateau de Solaison</strong>
+          (15e étape) et
+          <strong>col de Sarenne</strong>
+          par son versant sud-est (20e étape).
+        </li>
+        <li>
+          <strong>Le col du Galibier </strong>
+          (2 642 m) sera le toit du Tour 2026.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Dénivelé&nbsp;</h2>
+    <div>
+      <p>
+        Le dénivelé positif total du Tour de France 2026 sera de
+        <strong>54 450 m</strong>
+        .
+      </p>
+    </div>
+
+    <h2>
+      Chronos&nbsp;
+    </h2>
+    <div>
+      <ul>
+        <li style="margin-bottom: 15px;">
+          C'est une étape contre la montre par équipe de 19 km qui lancera le Tour 2026 à Barcelone.
+          <br />
+          Cela ne s'était plus produit depuis 1971, il y aura donc 55 ans.
+        </li>
+        <li>La 16e étape entre Évian-les-Bains et Thonon-les-Bains sera un contre- la-montre individuel de 26 km.</li>
+      </ul>
+    </div>
+
+    <h2>Bonificationss&nbsp;</h2>
+    <div>
+      <p>
+        Des bonifications seront octroyées à l'arrivée de chaque étape en
+        ligne et attribueront respectivement
+        <strong>
+          10, 6 et 4 secondes aux trois premiers coureurs classés.
+        </strong>
+      </p>
+    </div>
+
+    <h2>Coureurs&nbsp;</h2>
+    <div>
+      <p>
+        <strong>Ils seront 184&nbsp;</strong>
+        <strong>répartis</strong> dans
+        <strong>23 équipes</strong>
+        à s'aligner sur la ligne de départ&nbsp;
+        <strong>samedi 4 juillet à Barcelone.</strong>
+      </p>
+    </div>
+  </section>
 </body>
